@@ -11,7 +11,7 @@
 
 .imagen-testimonio {
     height: 100%;
-    width: auto;
+    width: 350px;
 }
 
 .contenedor-texto-testimonio {
@@ -38,4 +38,33 @@
 .texto-testimonio {
     font-size: 1.1rem;
     text-align: justify;
+}
+
+@media only screen and (max-width: 485px){
+	/*Small smartphones [325px -> 425px]*/
+  .contenedor-testimonio {
+    width: 350px;
+    height: 800px;
+    display: inline-block;
+  }
+  
+  .imagen-testimonio {
+    height: 350px;
+    width: 100%;
+  }
+
+  .nombre-testimonio {
+    font-size: 1.2rem;
+    margin: 15px;
+  }
+  .cargo-testimonio {
+    font-size: 1.3rem;
+  }
+  .contenedor-texto-testimonio{
+    padding: 0em;
+  }
+  .texto-testimonio {
+    margin: 25px;
+    font-size: 1.2rem;
+  }
 }

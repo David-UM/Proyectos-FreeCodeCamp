@@ -2,23 +2,23 @@
 import React from "react";
 import '../hojas-de-estilo/Testimonio.css';
 
-export function Testimonio(props) {
+export function Testimonio({imagen,nombre,pais,cargo,empresa,testimonio}) {
   return (
     <div className='contenedor-testimonio'>
       <img 
         className='imagen-testimonio'
-        src={require(`../imagenes/testimonio-${props.imagen}.png`)}
+        src={require(`../imagenes/testimonio-${imagen}.png`)}
         alt='Foto de Emma'
       />
       <div className='contenedor-texto-testimonio'>
         <p className='nombre-testimonio'>
-          <strong>{props.nombre}</strong> in {props.pais}
+          <strong>{nombre}</strong> in {pais}
         </p>
         <p className='cargo-testimonio'>
-          {props.cargo} at <strong>{props.empresa}</strong>
+          {cargo} at <strong>{empresa}</strong>
         </p>
         <p className='texto-testimonio'>
-          "{props.testimonio}"
+          "{testimonio}"
         </p>
       </div>
     </div>
